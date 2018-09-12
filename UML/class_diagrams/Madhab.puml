@@ -1,0 +1,7 @@
+@startuml
++enum Madhab {
+SHAFI
+HANAFI
+getShadowLength(): ShadowLength
+}
+@enduml

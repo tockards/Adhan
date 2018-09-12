@@ -1,0 +1,20 @@
+@startuml
+class PrayerTimes {
+  +fajr: Date
+  +sunrise: Date
+  +dhuhr: Date
+  +asr: Date
+  +maghrib: Date
+  +isha: Date
+  +PrayerTimes(Coordinates coordinates, DateComponents date, CalculationParameters params)
+  +PrayerTimes(Coordinates coordinates, Date date, CalculationParameters parameters)
+  +currentPrayer(): Prayer
+  +currentPrayer(Date time): Prayer
+  +nextPrayer(): Prayer
+  +nextPrayer(Date time): Prayer
+  +timeForPrayer(Prayer prayer): Date
+  +seasonAdjustedMorningTwilight(double latitude, int day, int year, Date sunrise): Date
+  +seasonAdjustedEveningTwilight(double latitude, int day, int year, Date sunset): Date
+  +daysSinceSolstice(int dayOfYear, int year, double latitude): int
+}
+@enduml

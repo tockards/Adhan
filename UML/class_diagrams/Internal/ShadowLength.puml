@@ -1,0 +1,9 @@
+@startuml
+enum ShadowLength{
+SINGLE = 1,0
+DOUBLE = 2,0
+-shadowLength : double
+-ShadowLength(double shadowLength)
++getShadowLength() : double
+}
+@enduml

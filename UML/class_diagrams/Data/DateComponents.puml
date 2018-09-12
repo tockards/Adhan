@@ -1,0 +1,10 @@
+@startuml
+class DateComponents {
++year: int
++month: int
++day: int
+
++{static} from(Date date): DateComponents
++DateComponents(int year, int month, int day)
+}
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class Coordinates {
++latitude: double
++longitude: double
++Coordinates(double latitude, double longitude)
+}
+@enduml

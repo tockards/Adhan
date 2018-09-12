@@ -1,0 +1,10 @@
+@startuml
+
+class SolarCoordinates{
++declination: double
++rightAscension : double
++apparentSiderealTime : double
++SolarCoordinates(double julianDay)
+}
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+class SolarTime{
++transit : double
++sunrise : double
++sunset : double
+-observer : Coordinates
+-solar: SolarCoordinates
+-prevSolar: SolarCoordinates
+-nextSolar: SolarCoordinates
+-approcimateTransit: double
++SolarTime(Date today, Coordinates coordinates)
++hourAngle(double angle, boolean afterTransit) : double
++afternoon(ShadowLength shadowLength) : double
+}
+@enduml

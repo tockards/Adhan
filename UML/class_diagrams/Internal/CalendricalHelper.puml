@@ -1,0 +1,8 @@
+@startuml
+class CalendricalHelper {
++{static} julianDay(int year, int month, int day) : double
++{static} julianDay(Date date) : double
++{static} julianDay(int year, int month, int day, double hours) : double
++{static} julianCentury(double JD) : double
+}
+@enduml

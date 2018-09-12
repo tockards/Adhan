@@ -1,0 +1,7 @@
+@startuml
+class DoubleUtil {
++{static} normalizeWithBound(double value, double max) : double
++{static} unwindAngle(double value) : double
++{static} closestAngle(double angle) : double
+}
+@enduml

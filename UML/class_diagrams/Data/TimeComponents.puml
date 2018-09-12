@@ -1,0 +1,10 @@
+@startuml
+class TimeComponents{
++hours: int
++minutes: int
++seconds: int
++{static} fromDouble(double value) : TimeComponents
+-TimeComponents(int hours, int minutes, int seconds)
++dateComponents(Date date): Date
+}
+@enduml

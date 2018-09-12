@@ -1,0 +1,11 @@
+@startuml
+
+class CalendarUtil {
++{static} isLeapYear(int year) : boolean
++{static} roundedMinute(Date when): Date
++{static} roundedMinute : Date
++{static} resolveTime(DateComponents components) : Date
++{static} add(Date when,  int amount, int field): Date
+-{static} resolveTime(int year, int month, int day) : Date
+}
+@enduml

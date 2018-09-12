@@ -1,0 +1,17 @@
+@startuml
+class CalculationParameters {
++method : CalculationMethod = CalculationMethod.OTHER
++fajrAngle: double
++ishAngle: double
++ishaInterval: int
++madhab : Madhab = Madhab.SHAFI
++highLatitudeRule : HighLatitude = HighLatitude.MIDDLE_OF_THE_NIGHT
++adjustments : PrayerAdjustments = new PrayerAdjustments
++CalculationParameters(double fajrAngle, double ishaAngle) : void
++CalculationParameters(double fajrAngle, int ishaInterval) : void
+{static}NightPortions()
+-NightPortions(double fajr, double isha)
+
+}
+
+@enduml

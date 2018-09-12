@@ -1,0 +1,12 @@
+@startuml
++class PrayerAdjustments{
++fajr: int
++sunrise: int
++dhur: int
++asr: int
++maghrib: int
++isha: int
++PrayerAdjustments()
++PrayerAdjustments(int fajr, int sunrise, int dhuhr, int asr, int maghrib, int isha)
+}
+@enduml

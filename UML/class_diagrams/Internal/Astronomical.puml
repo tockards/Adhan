@@ -1,0 +1,25 @@
+@startuml
+class Astronomical{
++{static} meanSolarLongitude(double T) : double
++{static} meanLunarLongitude(double T) : double
++{static} apparentSolarLongitude(double T,  double L0) : double
++{static} ascendingLunarNodeLongitude(double T,  double L0) : double
++{static} meanSolarAnomaly(double T) : double
++{static} solarEquationOfTheCenter(double T,  double L0) : double
++{static} meanObliquityOfTheEcliptic(double T) : double
++{static} apparentObliquityOfTheEcliptic(double T, double ε0)
++{static} meanSiderealTime(double T) : double
++{static} nutationInLongitude(double T, double L0, double Lp, double Ω) : double
++{static} nutationInObliquity(double T, double L0, double Lp, double Ω) : double
++{static} altitudeOfCelestialBody(double φ, double δ, double H) : double
++{static} approximateTransit(double L, double Θ0, double α2) : double
++{static} correctedTransit(double m0, double L, double Θ0, double α2, double α1, double α3) : double
++{static} correctedHourAngle(double m0, double h0, Coordinates coordinates, boolean afterTransit,
+           double Θ0, double α2, double α1, double α3, double δ2, double δ1, double δ3) : double
++{static} double interpolate(double y2, double y1, double y3, double n) : double
++{static} double double interpolate(double y2, double y1, double y3, double n) : double
+
+
+}
+
+@enduml

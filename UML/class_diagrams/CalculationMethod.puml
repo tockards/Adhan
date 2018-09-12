@@ -1,0 +1,17 @@
+@startuml
++enum CalculationMethod{
+MUSLIM_WORLD_LEAGUE
+EGYPTIAN
+KARACHI
+UMM_AL_QURA
+GULF
+MOON_SIGHTING_COMMITEE
+NORTH_AMERICA
+KUWAIT
+QATAR
+SINGAPORE
+OTHER
++getParameters() : CalculationParameters
+}
+
+@enduml
